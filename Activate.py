@@ -1,4 +1,5 @@
 import time
+import random
 
 def countdown(minutes):
     seconds = minutes * 60
@@ -14,7 +15,7 @@ def main():
     print("欢迎使用专注时钟！")
     while True:
         try:
-            minutes = int(input("请输入专注时长（分钟）："))
+            minutes = random.randint(1, 10)
             break
         except ValueError:
             print("无效的输入，请重新输入一个整数值。")
